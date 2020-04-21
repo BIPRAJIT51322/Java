@@ -36,10 +36,9 @@ public class Print_numbers
     }
     public static void Infinite()
     {
-        int a=1;
-        while (0<a)
+        int a = 1;
+        for(;;a++)
         {
-            a++;
             System.out.println(a);
         }
     }

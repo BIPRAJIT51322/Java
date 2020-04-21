@@ -2,7 +2,7 @@ import java.util.*;
 public class Perimeter
 {
     public static Scanner sc = new Scanner(System.in);
-    public static void peri()
+    public static void peri(String[] args)
     {
        System.out.println("=============================================");
        System.out.println("==================Perimeter==================");
@@ -77,4 +77,5 @@ public class Perimeter
         double ans = 2*(l+b);
         System.out.println("Area: "+ans+" "+u);
     }
+	
 }

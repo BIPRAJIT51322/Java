@@ -2,7 +2,7 @@ import java.util.*;
 public class Area
 {
     public static Scanner sc = new Scanner(System.in);
-    public static void area()
+    public static void area(String[] args)
     {
        System.out.println("=============================================");
        System.out.println("====================Area=====================");

@@ -31,7 +31,7 @@ public class Integers_Equality_Check
         int d = sc.nextInt();
         if (a==b&&b==c&&c==d&&d==a)
         {
-            System.out.println("The number are equal.");
+            System.out.println("The numbers are equal.");
         }
         else
         {

@@ -1,18 +1,44 @@
 import java.util.*;
-public class Login
+public class Login 
 {
     public static Scanner sc = new Scanner(System.in);
-     public static boolean login()
+    public static void main(String[] args)
     {
-        Start srt = new Start();
-        System.out.println("Username: ");
-        String a = sc.next();
-        System.out.println("Password: ");
-        int b = sc.nextInt();
-        if (a.equals("BG")&&b==2006)
+        String a = "Lets see if you have permission from the Owner";
+        System.out.println(a);  
+        if (login()==true) 
         {
-           return true;
+            System.out.print("You are verified!!");
         }
-        else return false;
+        else if (login()==false) 
+        {
+            System.out.println("You are not verified!!");
+        }
+    }
+    public static boolean login()
+    {
+        System.out.print("Username: ");
+        String user = sc.next();
+        if (user.equals("BG")||user.equals("admin")||user.equals("Sayan@001"))
+        {
+            System.out.print("Password: ");
+            String pass = sc.next();
+            if (user.equals("BG")&&pass.equals("2006")||user.equals("Sayan@001")&&pass.equals("2004"))
+            { 
+                return true;
+                 
+                
+            }
+            else 
+            {
+                return false;
+                
+            }
+        }
+        else 
+        {
+            System.out.println("Wrong username");
+            return false;
+        }
     }
 }

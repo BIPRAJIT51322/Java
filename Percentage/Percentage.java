@@ -1,4 +1,3 @@
-// This is a percetage finder
 import java.util.*;
 public class Percentage
 {
@@ -13,20 +12,20 @@ public class Percentage
       if (a.equals("BG")&&b.equals("2006"))
         {
             System.out.println("Welcome Biprajit Ghosh");
-            Percentage();
+            Result();
         }
         else 
         {
             Exit();
         }
     }
-  public static void Percentage()
+  public static void Result()
     {
         System.out.print("Enter the amount out of total: ");
         double a = sc.nextDouble();
         System.out.print("Enter the total amount: ");
         double b = sc.nextDouble();
-        double c = a/b*100d;
+        double c = b/a*100d;
         System.out.println("Percentage: "+c+" %");
     }
   public static void Exit()
