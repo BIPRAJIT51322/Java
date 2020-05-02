@@ -1,10 +1,9 @@
 package com.calculator;
-
 import java.util.*;
 public class Area
 {
     public static Scanner sc = new Scanner(System.in);
-    public static void area(String[] args)
+    public static void area()
     {
        System.out.println("=============================================");
        System.out.println("====================Area=====================");

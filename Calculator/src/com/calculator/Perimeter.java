@@ -1,47 +1,51 @@
 package com.calculator;
-
 import java.util.*;
 public class Perimeter
 {
     public static Scanner sc = new Scanner(System.in);
-    public static void peri(String[] args)
+    public static void perimeter()
     {
-       System.out.println("=============================================");
-       System.out.println("==================Perimeter==================");
-       System.out.println("=============================================");
-       System.out.println("Press 1.Perimeter of Circle\nPress 2.Perimeter of Triangle\nPress 3.Perimeter of Square\nPress 4.Perimeter of Rectangle\n");
-       int choice = sc.nextInt();
-       if (choice==1)
-       {
-           Circle();
-       }
-       else if (choice==2)
-       {
-           Triangle();
-       }
-       else if (choice==3)
-       {
-           Square();            
-       }
-       else if (choice==4)
-       {
-            Rectangle();  
-       }
-       else 
-       {
-           System.out.println("Please enter the integers given in the options");
-       }
+        System.out.println("|--------------------------------------------------|");
+        System.out.println("|---------------------Perimeter--------------------|");
+        System.out.println("|--------------------------------------------------|");
+        System.out.println("|Press 1. Perimeter of Circle                      |");
+        System.out.println("|Press 2. Perimeter of Triangle                    |");
+        System.out.println("|Press 3. Perimeter of Square                      |");
+        System.out.println("|Press 4. Perimeter of Rectangle                   |");
+        System.out.println("|--------------------------------------------------|");
+    }
+    public static void choice()
+    {
+        try {
+            System.out.print("Choice: ");
+            int choice = sc.nextInt();
+            if (choice==1)Circle();
+            else if (choice==2)Triangle();
+            else if (choice==3)Square();
+            else if (choice==4)Rectangle();
+            else {System.out.println("Please follow the instructions given by the calculator!!"); perimeter();}
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
     }
     public static void Circle()
     {
-        System.out.println("CIRCLE");
-        System.out.println("Enter the radius of the circle: ");
-        double r = sc.nextDouble();
-        System.out.println("Enter the unit");
-        String b = sc.next();
-        double pi = 3.14;
-        double rsq = 2*pi*r;
-        System.out.println("Perimeter: "+rsq+" "+b);   
+        try {
+            System.out.println("CIRCLE");
+            System.out.println("Enter the radius of the circle: ");
+            double r = sc.nextDouble();
+            System.out.println("Enter the unit");
+            String b = sc.next();
+            double pi = 3.14;
+            double rsq = 2 * pi * r;
+            System.out.println("Perimeter: " + rsq + " " + b);
+        }
+        catch (Exception e)
+        {
+            System.out.println(e);
+        }
     }
     public static void Triangle()
     {
