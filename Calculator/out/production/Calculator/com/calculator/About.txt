@@ -1,0 +1,11 @@
+|--------------------------------------------------|
+|-----------------About-Calculator-----------------|
+|--------------------------------------------------|
+|This Calculator is free to use.                   |
+|You just need to login or register in Calculator. |
+|This Calculator has a lot of features like Simple |
+|Interest, Area, Perimeter etc.                    |
+|This Calculator is Made by Biprajit Ghosh         |
+|A very big thanks to Sayan Biswas and Ankan Pal   |
+|for helping me in my project "Calculator".        |
+|--------------------------------------------------|
