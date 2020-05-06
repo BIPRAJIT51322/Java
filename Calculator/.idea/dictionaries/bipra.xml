@@ -5,6 +5,7 @@
       <w>biprajit</w>
       <w>bipu</w>
       <w>biswas</w>
+      <w>filein</w>
       <w>firstname</w>
       <w>ghosh</w>
       <w>lastname</w>
@@ -13,8 +14,12 @@
       <w>passin</w>
       <w>sayan</w>
       <w>signin</w>
+      <w>signindata</w>
       <w>signinpass</w>
+      <w>signinpst</w>
+      <w>signinrs</w>
       <w>signup</w>
+      <w>signupdesign</w>
       <w>sqlite</w>
       <w>userin</w>
     </words>

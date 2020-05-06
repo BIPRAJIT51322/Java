@@ -27,7 +27,7 @@ public class Start
         }
         catch (Exception e)
         {
-            System.out.println("An internal error occurred!!!!. Please contact the owner!!!"+e);
+            System.out.println("An unknown error occurred!!!!");
         }
     }
     public static void choose()throws IOException
@@ -45,8 +45,8 @@ public class Start
         }
         catch (Exception e)
         {
-            System.out.println("Please enter a integer in order to use the Calculator. Please restart the Calculator!!!!");
-            System.out.println("Shutting down Calculator..../n"+e);
+            System.out.println("Please enter a integer not a letter, alphabet or a symbol. Please restart the Calculator!!!!");
+            System.out.println("Shutting down Calculator..../n");
         }
     }
 }

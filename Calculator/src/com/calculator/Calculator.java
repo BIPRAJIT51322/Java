@@ -33,7 +33,7 @@ public class Calculator
         }
         catch (Exception e)
         {
-            System.out.println(e);
+            System.out.println("An unknown error occurred!!!");
         }
     }
     public static void select()
@@ -71,7 +71,7 @@ public class Calculator
         }
         catch (Exception e)
         {
-            System.out.println(e);
+            System.out.println("An unknown error occurred!!!");
         }
     }
 }

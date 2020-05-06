@@ -1,5 +1,5 @@
 package com.calculator;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 public class Basic 
 {
@@ -13,12 +13,8 @@ public class Basic
              System.out.println("|--------------------------------------------------|");
              System.out.println("|--------------------Addition----------------------|");
              System.out.println("|--------------------------------------------------|");
-             System.out.println("|Press 0. Exit                                     |");
-             System.out.println("|Press 1. Restart                                  |");
-             System.out.println("|--------------------------------------------------|");
              System.out.print("\nEnter the number of elements: ");
             int a = sc.nextInt();
-            if (a==0)exit.exit();
             Double eleme [] = new Double[a];
             Double s = 0.0d;
             System.out.println("Enter the elements: ");
@@ -31,7 +27,7 @@ public class Basic
         }
         catch(Exception e)
         {
-            System.out.println("An error occurred!!");
+            System.out.println("An unknown error occurred!!!");
             add();
         }
     }
@@ -42,13 +38,10 @@ public class Basic
             System.out.println("|--------------------------------------------------|");
             System.out.println("|-------------------Subtraction--------------------|");
             System.out.println("|--------------------------------------------------|");
-            System.out.println("|Press 0. Exit                                     |");
-            System.out.println("|Press 1. Restart                                  |");
-            System.out.println("|--------------------------------------------------|");
         }
         catch (Exception e)
         {
-            System.out.println(e);
+            System.out.println("An unknown error occurred!!!");
         }
     }
     public static void multiply()throws IOException
@@ -57,9 +50,6 @@ public class Basic
         {
             System.out.println("|--------------------------------------------------|");
             System.out.println("|-----------------Multiplication-------------------|");
-            System.out.println("|--------------------------------------------------|");
-            System.out.println("|Press 0. Exit                                     |");
-            System.out.println("|Press 1. Restart                                  |");
             System.out.println("|--------------------------------------------------|");
             System.out.print("\nEnter the number of elements: ");
             int a = sc.nextInt();
@@ -85,7 +75,7 @@ public class Basic
         }
         catch(Exception e)
         {
-            System.out.println(e);
+            System.out.println("An unknown error occurred!!!");
         }
         calc.more();
     }
@@ -96,7 +86,7 @@ public class Basic
 
         }catch (Exception e)
         {
-            System.out.println(e);
+            System.out.println("An unknown error occurred!!!");
         }
     }
     public static void table()
@@ -105,9 +95,6 @@ public class Basic
         {
             System.out.println("|--------------------------------------------------|");
             System.out.println("|--------------Multiplication-Table----------------|");
-            System.out.println("|--------------------------------------------------|");
-            System.out.println("|Press 0. Exit                                     |");
-            System.out.println("|Press 1. Restart                                  |");
             System.out.println("|--------------------------------------------------|");
             System.out.print("\nEnter the number: ");
             Double a = sc.nextDouble();
@@ -118,7 +105,7 @@ public class Basic
         }
         catch(Exception e)
         {
-            System.out.println(e);
+            System.out.println("An unknown error occurred!!!");
         }
     }
 }
