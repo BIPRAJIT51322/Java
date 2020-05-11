@@ -6,7 +6,7 @@ Want to copy my programs
 
 open command prompt
 
-type "git clone https://github.com/BIPRAJIT51322/Biprajit-Java Biprajit-Java"
+type "git clone https://github.com/BIPRAJIT51322/Java Biprajit-Java"
 
 Make sure you have git software before using this command
 
