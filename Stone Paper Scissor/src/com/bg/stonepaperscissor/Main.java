@@ -6,7 +6,7 @@ public class Main {
     static int a,b;
     static String po1, po2;
     static String result;
-    static String tie="Tie";
+    static String tie="Tie!!";
     static String abc = "", bcd= "";
     static int score1, score2;
     public static Scanner sc = new Scanner(System.in);
@@ -36,7 +36,7 @@ public class Main {
             }
             else
             {
-                calculate();
+               calculate();
             }
         }
         catch (Exception e)
@@ -117,9 +117,9 @@ public class Main {
     }
     public static void output() {
         try {
-            System.out.println(p1+":\t"+po1+"\t\t\t"+p2+":\t"+po2);
+            System.out.println(p1+": "+po1+"\t\t\t"+p2+": "+po2);
             System.out.println(result);
-            System.out.println(p1+":\t"+score1+"\t\t\t"+p2+":\t"+score2);
+            System.out.println(p1+": "+score1+"\t\t\t"+p2+": "+score2);
             next();
         } catch (Exception e)
         {
@@ -127,28 +127,28 @@ public class Main {
         }
     }
     public static void next()
-    {
-        try{
-            System.out.println("Press 1. Repeat the game\nPress 2. Exit and get the score");
-            int zz  = sc.nextInt();
-            if (zz==1)
-            {
-                calculate();
-            }
-            else if(zz==2)
-            {
-                System.out.println(p1+":\t"+score1+"\t\t\t"+p2+":\t"+score2);
-                System.exit(0);
-            }
-            else
-            {
-                System.out.println("Follow the instructions!!");
-                next();
-            }
-        }
-        catch (Exception e)
+    {try{
+        System.out.println("Press 1. Repeat the game\nPress 2. Exit and get the score");
+        int zz  = sc.nextInt();
+        if (zz==1)
         {
-            System.out.println(e);
+            calculate();
+        }
+        else if(zz==2)
+        {
+            System.out.println(p1+":\t"+score1+"\t\t\t"+p2+":\t"+score2);
+            System.exit(0);
+        }
+        else
+        {
+            System.out.println("Follow the instructions!!");
+            next();
         }
     }
+    catch (Exception e)
+    {
+        System.out.println(e);
+    }
+    }
+
 }
