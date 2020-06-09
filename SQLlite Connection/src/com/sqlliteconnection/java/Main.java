@@ -10,6 +10,7 @@ public class Main {
             Connect.main();
             System.out.println("Press 1 to insert data");
             System.out.println("Press 2 to get all users");
+            System.out.println("Press 3 to get your data");
             System.out.print("Choice: ");
             a = sc.nextInt();
             if(a==1)
@@ -19,6 +20,10 @@ public class Main {
             else if(a==2)
             {
                 All_users.main();
+            }
+            else if(a==3)
+            {
+                User_Data.main();
             }
             else
             {
