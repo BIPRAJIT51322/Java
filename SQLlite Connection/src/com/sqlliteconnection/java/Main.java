@@ -16,6 +16,10 @@ public class Main {
             {
                 Insert.main();
             }
+            else if(a==2)
+            {
+                All_users.main();
+            }
             else
             {
                 System.out.println("Be sure to use the given commands");
